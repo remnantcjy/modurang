@@ -1,0 +1,130 @@
+.main__bar-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.main__bar img {
+  width: 1300px;
+  height: 600px;
+}
+.main__bar-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 150px;
+}
+.main__bar {
+  margin: 0 70px;
+}
+
+.best__item-title h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  border-top: 6px solid white;
+  padding-top: 40px;
+  border-radius: 40px;
+  background-color: #fffb71;
+  padding-bottom: 30px;
+}
+.best__item-good img {
+  width: 350px;
+  height: 350px;
+  padding: 50px 50px;
+}
+.best__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  border-radius: 40px;
+  margin-bottom: 150px;
+}
+.best__item a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 20px;
+}
+.best__item-good {
+  display: block;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.best__item2-title h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  border-top: 6px solid white;
+  padding-top: 40px;
+  border-radius: 40px;
+  background-color: #fffb71;
+  padding-bottom: 30px;
+}
+.best__item2-good img {
+  width: 350px;
+  height: 350px;
+  padding: 50px 50px;
+}
+.best__item2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  border-radius: 40px;
+}
+.best__item2 a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 20px;
+  /*  font-family: "Cute Font", cursive; - 27px*/
+}
+.best__item2-good a {
+  display: block;
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.best__item img {
+  border: 1px solid rgba(255, 255, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  margin: 30px 50px;
+}
+.best__item img:hover {
+  cursor: pointer;
+  border: 13px solid rgba(228, 248, 117, 0.6);
+  border-radius: 10px;
+}
+
+.best__item2 img {
+  border: 1px solid rgba(255, 255, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  margin: 30px 50px;
+}
+.best__item2 img:hover {
+  cursor: pointer;
+  border: 13px solid rgba(228, 248, 117, 0.6);
+  border-radius: 10px;
+}
+
+.main__bar2 img {
+  width: 800px;
+  height: 600px;
+}
+.main__bar-img2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  width: 1300px;
+  background-color: white;
+}
+.main__bar2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 370px;
+}

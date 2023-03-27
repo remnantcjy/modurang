@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>모두랑</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body__index">
+    <header class="header__title">
+      <a href="index.html">
+        <h1>modurang</h1>
+      </a>
+      <div class="header__sign">
+        <div class="header__sign-login">
+          <a href="#">
+            <span>로그인</span>
+          </a>
+        </div>
+        <div class="header__sign-signup">
+          <a href="register.html">
+            <span>회원가입</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer__list" class="footer__index">
+      <div class="footer__list-li">
+        <a href="index.html">
+          <span>MODURANG</span>
+        </a>
+      </div>
+      <div class="footer__list-li">
+        <a href="#">
+          <span>이용약관</span>
+        </a>
+      </div>
+      <div class="footer__list-li">
+        <a href="#">
+          <span>이용안내</span>
+        </a>
+      </div>
+      <div class="footer__list-li">
+        <a href="#">
+          <span>개인정보취급방침</span>
+        </a>
+      </div>
+      <div class="footer__list-li">
+        <a href="#">
+          <span>고객센터</span>
+        </a>
+      </div>
+    </footer>
+
+    <div class="kakao_join-box">
+      <div class="kakao_join">
+        <a href="javascript:kakaoLogin();">
+          <img
+            src="https://www.gb.go.kr/Main/Images/ko/member/certi_kakao_login.png"
+            style="height: 60px; width: auto"
+          />
+        </a>
+      </div>
+    </div>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
+    <script>
+      // 0d229213839a1b65f67af8f046f8c9cc
+      window.Kakao.init("0d229213839a1b65f67af8f046f8c9cc");
+
+      function kakaoLogin() {
+        window.Kakao.Auth.login({
+          scope: "profile_nickname, account_email, gender",
+          success: function (authObj) {
+            console.log(authObj);
+            window.Kakao.API.request({
+              url: "/v2/user/me",
+              success: (res) => {
+                const kakao_account = res.kakao_account;
+                console.log(kakao_account);
+              },
+            });
+          },
+        });
+      }
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+/* Component */
+@import "component/status-bar.css";
+
+/* Screen */
+@import "screen/header.css";
+@import "screen/main.css";
+@import "screen/footer.css";
+@import "screen/modurang_birth_img.css";
+@import "screen/login.css";
+@import "screen/toon.css";
+
+body {
+  background-color: white;
+}
+
+.body__index {
+  height: 370vh;
+}
+
+#body_100 {
+  height: 160vh;
+}

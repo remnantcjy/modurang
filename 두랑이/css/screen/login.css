@@ -1,0 +1,15 @@
+.kakao_join-box {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 1000px;
+  height: 600px;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+
+.kakao_join-box div {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
